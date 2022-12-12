@@ -499,6 +499,7 @@ h3 {
 @media (min-width: 768px) {
   .main-nav {
     width: 100%;
+    position: fixed;
   }
 
   .nav-img {
@@ -509,6 +510,8 @@ h3 {
     display: block;
     display: flex;
     padding-right: 7rem;
+
+    right: 0;
   }
 
   .logo {
