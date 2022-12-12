@@ -49,6 +49,14 @@ Example command:
 ```
  -->
 
+ <!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> link to your deployed project live below.
+
+- [Live Demo Link](https://Sammy3000.github.io)
+
 ### Setup
 
 Clone this repository to your desired folder:
@@ -77,11 +85,11 @@ Install this project with:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 > This is a solo project.
 
-👤 **Author1**
+👤 **Towett Sammy**
 
 - GitHub: [@sam](https://github.com/Sammy3000)
 - Twitter: [@towettsam](https://twitter.com/sammy15375658)
