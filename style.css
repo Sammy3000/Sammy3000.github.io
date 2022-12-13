@@ -700,6 +700,7 @@ h3 {
     justify-content: space-between;
   }
 }
+
 @media only screen and (min-width: 730px) and (max-width: 1028px) {
   .first-content {
     width: 62.5rem;
