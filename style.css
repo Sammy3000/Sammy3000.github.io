@@ -542,9 +542,9 @@ h3 {
 
   .first-content {
     padding-left: 15rem;
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 6rem;
     background-image: url(images/header.png);
-    background-size: 90%;
+    background-size: 100%;
     height: 43rem;
   }
 
@@ -698,5 +698,20 @@ h3 {
   .frameworks {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 730px) and (max-width: 1028px) {
+  .first-content {
+    width: 62.5rem;
+  }
+  .section-about {
+    width: 62.5rem;
+  }
+  .contact {
+    width: 62.5rem;
+  }
+  .contact-info {
+    text-align: center;
+    margin-left: 15rem;
   }
 }
