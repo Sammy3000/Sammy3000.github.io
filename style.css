@@ -509,7 +509,6 @@ h3 {
     display: block;
     display: flex;
     padding-right: 7rem;
-
     right: 0;
   }
 
@@ -704,12 +703,15 @@ h3 {
   .first-content {
     width: 62.5rem;
   }
+
   .section-about {
     width: 62.5rem;
   }
+
   .contact {
     width: 62.5rem;
   }
+
   .contact-info {
     text-align: center;
     margin-left: 15rem;
