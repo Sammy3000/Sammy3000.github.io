@@ -10,15 +10,38 @@ body {
 
 .main-nav {
   width: 100%;
-  height: 4.01rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   background: #fff;
+  padding: 2rem 3rem 2rem 0;
 }
 
 .desktop-nav {
   display: none;
+}
+.mobile-nav {
+  width: 2rem;
+  height: 1.5rem;
+  color: #396df2;
+}
+.nav-open .mobile {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+.nav-open .mobile-nav[name="menu-outline"] {
+  display: none;
+}
+.mobile-nav[name="close"] {
+  display: none;
+}
+.nav-open .mobile-nav[name="close"] {
+  display: block;
+}
+.nav-icons {
+  cursor: pointer;
 }
 
 .logo {
@@ -28,23 +51,6 @@ body {
   font-weight: 700;
   font-size: 1.1rem;
   text-decoration: none;
-}
-
-.nav-img {
-  background: url(images/Union.png);
-  width: 50px;
-  height: 50px;
-  margin-right: 1.5rem;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: bottom;
-}
-.active {
-  background: url(images/close.png);
-  background-size: 24px;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 .first-content {
   height: 37.5rem;
@@ -514,6 +520,9 @@ h3 {
   }
 
   .nav-img {
+    display: none;
+  }
+  .nav-icons {
     display: none;
   }
 

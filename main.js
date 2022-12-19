@@ -1,5 +1,5 @@
-let hambugerMenu = document.querySelector(".nav-img");
-let desktopNavigation = document.querySelector(".desktop-nav");
-hambugerMenu.addEventListener("click", () => {
-  hambugerMenu.classList.toggle("active");
-});
+/*const menuIcons = document.querySelector(".nav-icons");
+const mainNavigation = document.querySelector(".mobile");
+menuIcons.addEventListener("click", () => {
+  mainNavigation.classList.toggle("nav-open");
+});*/
