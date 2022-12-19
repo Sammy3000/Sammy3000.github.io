@@ -31,9 +31,21 @@ body {
 }
 
 .nav-img {
+  background: url(images/Union.png);
+  width: 50px;
+  height: 50px;
   margin-right: 1.5rem;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: bottom;
 }
-
+.active {
+  background: url(images/close.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .first-content {
   height: 37.5rem;
   width: 100%;

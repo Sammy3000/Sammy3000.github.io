@@ -14,11 +14,11 @@
   <body>
     <header class="main-nav">
       <a href="index.html" class="logo">Towett</a>
-      <img src="images/Union.png" alt="menu-icon" class="nav-img" />
+      <div class="nav-img"></div>
       <ul class="desktop-nav">
-        <li class="desktop-li"><a href="#">Portfolio</a></li>
-        <li class="desktop-li"><a href="#">About</a></li>
-        <li class="desktop-li"><a href="#">Contact</a></li>
+        <li class="desktop-li"><a href="#portfolio-link">Portfolio</a></li>
+        <li class="desktop-li"><a href="#about-link">About</a></li>
+        <li class="desktop-li"><a href="#contact-link">Contact</a></li>
       </ul>
     </header>
     <section class="first-content">
@@ -55,7 +55,7 @@
         </li>
       </ul>
     </section>
-    <section class="work">
+    <section class="work" id="portfolio-link">
       <div class="describe tonic-one">
         <img
           src="images/Snapshoot Portfolio.png"
@@ -264,7 +264,7 @@
 
     <!--about section-->
 
-    <section class="section-about">
+    <section class="section-about" id="about-link">
       <div class="container-one">
         <h2 class="heading-tertiary">About<br />myself</h2>
         <p class="about-info">
@@ -390,7 +390,7 @@
         </ul>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact-link">
       <h2 class="heading">Contact me</h2>
       <p class="contact-info">
         If you have an application you are interested in developing, a feature
@@ -431,6 +431,6 @@
         </ul>
       </form>
     </section>
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
   </body>
 </html>
