@@ -492,6 +492,16 @@ h3 {
 .desktop-img {
   display: none;
 }
+#error_message {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 /* Properties for larger screens */
 
