@@ -1,7 +1,7 @@
-const menuIcon = document.querySelector("nav-icons");
-const mainNavigation = document.querySelector(".main-nav");
+const menuIcon = document.querySelector('nav-icons');
+const mainNavigation = document.querySelector('.main-nav');
 
-menuIcon.addEventListener("click", () => {
-  mainNavigation.classList.toggle("nav-open");
-  document.body.classList.toggle("hidden");
+menuIcon.addEventListener('click', () => {
+  mainNavigation.classList.toggle('nav-open');
+  document.body.classList.toggle('hidden');
 });
