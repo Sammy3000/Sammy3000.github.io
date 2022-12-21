@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   overflow-x: hidden;
 }
@@ -19,6 +20,7 @@ body {
   background: #fff;
   padding: 2rem 3rem 2rem 0;
 }
+
 .desktop-nav {
   display: flex;
   flex-direction: column;
@@ -33,14 +35,17 @@ body {
 .nav-icons {
   cursor: pointer;
 }
+
 .icons {
   width: 25px;
   height: 25px;
   color: #396df2;
 }
+
 .closing-icon {
   color: #fff;
 }
+
 .logo {
   margin-left: 1.5rem;
   font-family: "Poppins", sans-serif;
@@ -49,6 +54,7 @@ body {
   font-size: 1.1rem;
   text-decoration: none;
 }
+
 .first-content {
   height: 37.5rem;
   width: 100%;
@@ -507,6 +513,7 @@ h3 {
 .desktop-img {
   display: none;
 }
+
 .hidden {
   overflow: hidden;
   margin: 0;
@@ -536,12 +543,14 @@ h3 {
     visibility: hidden;
     backdrop-filter: blur(5px);
   }
+
   .nav-open .desktop-menu {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
   }
+
   .icons[name="close-outline"] {
     display: none;
   }
@@ -553,12 +562,14 @@ h3 {
   .nav-open .icons[name="menu-outline"] {
     display: none;
   }
+
   .desktop-li {
     display: block;
   }
+
   .desktop-li a {
     color: #fff;
-    font-family: "Poppins" sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -578,6 +589,7 @@ h3 {
   .nav-img {
     display: none;
   }
+
   .nav-icons {
     display: none;
   }
@@ -585,6 +597,7 @@ h3 {
   .logo {
     padding-left: 5rem;
   }
+
   .desktop-nav {
     display: flex;
     flex-direction: row;
