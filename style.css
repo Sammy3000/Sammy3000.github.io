@@ -524,6 +524,16 @@ h3 {
   top: 0;
   bottom: 0;
 }
+#error_message {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
   .desktop-menu {
