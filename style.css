@@ -525,6 +525,17 @@ h3 {
   bottom: 0;
 }
 
+#error_message {
+  color: red;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .desktop-menu {
     background-color: rgba(48, 61, 179, 0.8);
