@@ -173,7 +173,7 @@ let desktopProjects = [
     desktopImages: "./images/Snapshoot_five.png",
   },
 ];
-
+//here
 desktopProjects.forEach((desktopProject, desktopIndex) => {
   let technology;
   desktopProject.technologies.forEach((tech_item) => {
@@ -183,6 +183,7 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
   desktopProject.languages.forEach((lang) => {
     language += `<li class="lang-li">${lang}</li>`;
   });
+  //here
   let each_desktopProject = `
   <div class="describe desktop-post-one">
   <article>
@@ -205,4 +206,157 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
   />
 </div>`;
   projectContainer.innerHTML += each_desktopProject;
+});
+
+{
+  /* <div class="overlay">
+<div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-name">Tonic</h1>
+    <p class="close-modal">&times;</p>
+  </div>
+  <div class="modal-information">
+    <h2 class="modal-info">Canopy</h2>
+    <h2 class="modal-info">Back end Dev</h2>
+    <h2 class="modal-info">2015</h2>
+  </div>
+  <div class="modal-image">
+    <img
+      src="images/Snapshoot_mobile.png"
+      alt="modal-image"
+      width="250"
+      height="200"
+      class="modal-image-one"
+    />
+    <img
+      src="images/Snapshoot_desktop.png"
+      alt="modal-image"
+      width="650"
+      height="300"
+      class="modal-image-two"
+    />
+  </div>
+  <div class="modal-paragraph">
+    <p class="paragraph">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text
+      ever since the 1500s, when an unknown printer took a galley of
+      type and scrambled it to make a type specimen book. It has
+      survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essent
+    </p>
+    <p class="desktop-p">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text
+      ever since the 1500s, when an unknown printer took a galley of
+      type and scrambled it 1960s with the releaLorem Ipsum is simply
+      dummy text of the printing and typesetting industry. Lorem Ipsum
+      has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it
+      1960s with the releorem Ipsum is simply dummy text of the printing
+      and typesetting industry. Lorem Ipsum han printer took a galley of
+      type and scrambled it 1960s with the releawn printer took a galley
+      of type and scrambled it 1960s with the releaLorem Ipsum is simply
+      dummy text of the printing and typesetting industry. Lorem Ipsum
+      has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it
+      1960s with the relea
+    </p>
+  </div>
+  <div class="modal-technologies">
+    <p class="tech">Html</p>
+    <p class="tech">CSS</p>
+    <p class="tech">Javascript</p>
+  </div>
+  <div class="modal-button">
+    <a href="#" class="modal-btn">See Live</a>
+    <a href="#" class="modal-btn">See Source</a>
+  </div>
+</div>
+</div> */
+}
+let projectButtons = document.querySelectorAll(".work-btn");
+let closeModalButton = document.querySelector(".close-modal");
+let modalContainer = document.querySelector(".modal-window");
+let mainModalContainer = document.querySelector(".main-modal-window");
+//close window button
+closeModalButton.addEventListener("click", () => {
+  mainModalContainer.style.display = "none";
+});
+
+const modalContent = (project) => {
+  const popup = `<div class="overlay">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-name">Tonic</h1>
+      <p class="close-modal">&times;</p>
+    </div>
+    <div class="modal-information">
+      <h2 class="modal-info">Canopy</h2>
+      <h2 class="modal-info">Back end Dev</h2>
+      <h2 class="modal-info">2015</h2>
+    </div>
+    <div class="modal-image">
+      <img
+        src="images/Snapshoot_mobile.png"
+        alt="modal-image"
+        width="250"
+        height="200"
+        class="modal-image-one"
+      />
+      <img
+        src="images/Snapshoot_desktop.png"
+        alt="modal-image"
+        width="650"
+        height="300"
+        class="modal-image-two"
+      />
+    </div>
+    <div class="modal-paragraph">
+      <p class="paragraph">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it to make a type specimen book. It has
+        survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essent
+      </p>
+      <p class="desktop-p">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it 1960s with the releaLorem Ipsum is simply
+        dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it
+        1960s with the releorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum han printer took a galley of
+        type and scrambled it 1960s with the releawn printer took a galley
+        of type and scrambled it 1960s with the releaLorem Ipsum is simply
+        dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it
+        1960s with the relea
+      </p>
+    </div>
+    <div class="modal-technologies">
+      <p class="tech">Html</p>
+      <p class="tech">CSS</p>
+      <p class="tech">Javascript</p>
+    </div>
+    <div class="modal-button">
+      <a href="#" class="modal-btn">${project.demo}</a>
+      <a href="#" class="modal-btn">${project.source}</a>
+    </div>
+  </div>
+  </div> `;
+  modalContainer.innerHTML = popup;
+  mainModalContainer.style.display = "block";
+};
+projectButtons.forEach((projectBtn) => {
+  projectBtn.addEventListener("click", (e) => {
+    const getBtnId = e.target.getAttribute("id");
+    const projectObj = projects[getBtnId];
+    modalContent(projectObj);
+  });
 });
