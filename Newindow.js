@@ -1,4 +1,6 @@
 const projectContainer = document.querySelector(".work");
+let modalContainer = document.querySelector(".modal-window");
+let mainModalContainer = document.querySelector(".main-modal-window");
 
 let projects = [
   {
@@ -276,13 +278,6 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
 </div> */
 }
 let projectButtons = document.querySelectorAll(".work-btn");
-let closeModalButton = document.querySelector(".close-modal");
-let modalContainer = document.querySelector(".modal-window");
-let mainModalContainer = document.querySelector(".main-modal-window");
-//close window button
-closeModalButton.addEventListener("click", () => {
-  mainModalContainer.style.display = "none";
-});
 
 const modalContent = (project) => {
   const popup = `<div class="overlay">
@@ -345,14 +340,20 @@ const modalContent = (project) => {
       <p class="tech">Javascript</p>
     </div>
     <div class="modal-button">
-      <a href="#" class="modal-btn">${project.demo}</a>
-      <a href="#" class="modal-btn">${project.source}</a>
+      <a href="${project.demo}" class="modal-btn">See Demo</a>
+      <a href="${project.source}" class="modal-btn">See Source</a>
     </div>
   </div>
   </div> `;
   modalContainer.innerHTML = popup;
   mainModalContainer.style.display = "block";
 };
+let closeModalButton = document.querySelector(".close-modal");
+//close window button
+closeModalButton.addEventListener("click", () => {
+  mainModalContainer.style.display = "none";
+});
+
 projectButtons.forEach((projectBtn) => {
   projectBtn.addEventListener("click", (e) => {
     const getBtnId = e.target.getAttribute("id");
