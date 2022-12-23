@@ -17,10 +17,12 @@
   background: rgba(193, 199, 208, 0.5);
   z-index: 200;
   backdrop-filter: blur(5px);
+  transition: 1s all;
+  transform: scale(1);
 }
-/* .main-modal-window {
+.main-modal-window {
   display: none;
-} */
+}
 .modal-content {
   padding: 3rem 1.5rem;
   width: 90%;
@@ -112,8 +114,21 @@
   color: #344563;
 }
 .close-modal {
+  position: fixed;
+  z-index: 1000;
+  right: 20%;
+  top: 3%;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
   cursor: pointer;
+  border: 1px solid black;
 }
+.close-modal:hover {
+  background-color: #171a1f;
+  color: white;
+}
+
 .modal-image {
   padding: 10px;
   display: flex;
@@ -130,9 +145,7 @@
 html {
   overflow-x: hidden;
 }
-/* .modal-window {
-  display: none;
-} */
+
 body {
   background: #e5e5e5;
 }
@@ -757,6 +770,9 @@ h3 {
     position: absolute;
     top: 70%;
     right: 15%;
+  }
+  .close-modal {
+    right: 10%;
   }
 
   /*here*/

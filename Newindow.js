@@ -101,7 +101,9 @@ projects.forEach((project, index) => {
       <p class="tonic-p">
        ${project.description}
       </p>
-      <ul class="lang">${tech}</ul>
+      <ul class="lang">
+      ${tech}
+      </ul>
       <button class="work-btn" id=${index}>See Project</button>
     </article>  
   </div>
@@ -183,7 +185,7 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
   });
   let language;
   desktopProject.languages.forEach((lang) => {
-    language += `<li class="lang-li">${lang}</li>`;
+    language += `<li class="lang-li"><span>${lang}</span></li>`;
   });
   //here
   let each_desktopProject = `
@@ -196,9 +198,7 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
     <p class="tonic-p">
     ${desktopProject.information}
     </p>
-    <ul class="lang">
-    ${language}
-    </ul>
+    <ul class="lang">${language}</ul>
     <button class="work-btn" id=${desktopIndex}>See Project</button>
   </article>
   <img
@@ -284,7 +284,6 @@ const modalContent = (project) => {
   <div class="modal-content">
     <div class="modal-header">
       <h1 class="modal-name">Tonic</h1>
-      <p class="close-modal">&times;</p>
     </div>
     <div class="modal-information">
       <h2 class="modal-info">Canopy</h2>
