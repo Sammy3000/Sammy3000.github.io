@@ -6,19 +6,20 @@
 
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 100%;
   overflow: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
   background: rgba(193, 199, 208, 0.5);
   z-index: 200;
   backdrop-filter: blur(5px);
-  transition: 1s all;
-  transform: scale(1);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-modal-window {
@@ -29,7 +30,7 @@
   padding: 3rem 1.5rem;
   width: 90%;
   z-index: 300;
-  margin: 0 3.5rem;
+  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -46,7 +47,7 @@
 
 .modal-information {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .modal-technologies {
@@ -119,26 +120,21 @@
 .modal-info {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 26px;
   color: #344563;
+  padding: 0 1rem;
 }
 
 .close-modal {
   position: fixed;
   z-index: 1000;
-  right: 20%;
+  right: 10%;
   top: 3%;
-  background: transparent;
-  font-size: 1.5rem;
   cursor: pointer;
-  border: 1px solid black;
-}
-
-.close-modal:hover {
-  background-color: #171a1f;
-  color: white;
+  border: 0;
+  background-color: #fff;
 }
 
 .modal-image {
@@ -154,9 +150,9 @@
 .desktop-p {
   display: none;
 }
-
-/* here */
-html {
+html,
+body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -742,8 +738,23 @@ h3 {
 /* Properties for larger screens */
 
 @media (min-width: 768px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(193, 199, 208, 0.5);
+    z-index: 200;
+    backdrop-filter: blur(5px);
+  }
   .modal-content {
-    margin-top: 5rem;
+    margin: 5rem 3.5rem 0 3.5rem;
   }
 
   .modal-information {
@@ -758,6 +769,11 @@ h3 {
 
   .modal-info {
     margin: 0 1rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #344563;
+    padding: 0 1rem;
   }
 
   .modal-image-two {
