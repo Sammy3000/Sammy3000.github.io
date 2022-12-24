@@ -1,48 +1,48 @@
-const projectContainer = document.querySelector(".work");
-const modalContainer = document.querySelector(".overlay");
-const mainModalContainer = document.querySelector(".main-modal-window");
-const wholeCont = document.querySelector(".blur-bg");
+const projectContainer = document.querySelector('.work');
+const modalContainer = document.querySelector('.overlay');
+const mainModalContainer = document.querySelector('.main-modal-window');
+const wholeCont = document.querySelector('.blur-bg');
 
 const projects = [
   {
-    featuredImage: "./images/Snapshoot_zero.png",
-    name: "Tonic",
-    information: ["Canopy", "Back End Dev", "2015"],
+    featuredImage: './images/Snapshoot_zero.png',
+    name: 'Tonic',
+    information: ['Canopy', 'Back End Dev', '2015'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ["HTML", "CSS", "javascript"],
-    demo: "https://sammy3000.github.io/",
-    source: "https://github.com/Sammy3000/Sammy3000.github.io",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'javascript'],
+    demo: 'https://sammy3000.github.io/',
+    source: 'https://github.com/Sammy3000/Sammy3000.github.io',
   },
   {
-    featuredImage: "./images/Snapshoot_one.png",
-    name: "Tonic",
-    information: ["Canopy", "Back End Dev", "2015"],
+    featuredImage: './images/Snapshoot_one.png',
+    name: 'Tonic',
+    information: ['Canopy', 'Back End Dev', '2015'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ["HTML", "CSS", "javascript"],
-    demo: "https://sammy3000.github.io/",
-    source: "https://github.com/Sammy3000/Sammy3000.github.io",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'javascript'],
+    demo: 'https://sammy3000.github.io/',
+    source: 'https://github.com/Sammy3000/Sammy3000.github.io',
   },
   {
-    featuredImage: "./images/Snapshoot_two.png",
-    name: "Tonic",
-    information: ["Canopy", "Back End Dev", "2015"],
+    featuredImage: './images/Snapshoot_two.png',
+    name: 'Tonic',
+    information: ['Canopy', 'Back End Dev', '2015'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ["HTML", "CSS", "javascript"],
-    demo: "https://sammy3000.github.io/",
-    source: "https://github.com/Sammy3000/Sammy3000.github.io",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'javascript'],
+    demo: 'https://sammy3000.github.io/',
+    source: 'https://github.com/Sammy3000/Sammy3000.github.io',
   },
   {
-    featuredImage: "./images/Snapshoot_three.png",
-    name: "Tonic",
-    information: ["Canopy", "Back End Dev", "2015"],
+    featuredImage: './images/Snapshoot_three.png',
+    name: 'Tonic',
+    information: ['Canopy', 'Back End Dev', '2015'],
     description:
-      " A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ["HTML", "CSS", "javascript"],
-    demo: "https://sammy3000.github.io/",
-    source: "https://github.com/Sammy3000/Sammy3000.github.io",
+      ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    technologies: ['HTML', 'CSS', 'javascript'],
+    demo: 'https://sammy3000.github.io/',
+    source: 'https://github.com/Sammy3000/Sammy3000.github.io',
   },
 ];
 
@@ -89,36 +89,36 @@ projects.forEach((project, index) => {
 
 const desktopProjects = [
   {
-    name: "Multi Post Stories",
-    technologies: ["Facebook", "Fullstack Dev", "2015"],
+    name: 'Multi Post Stories',
+    technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    languages: ["html", "Ruby on rails", "css", "javascript"],
-    desktopImages: "./images/Snapshoot_five.png",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desktopImages: './images/Snapshoot_five.png',
   },
   {
-    name: "Multi Post Stories",
-    technologies: ["Facebook", "Fullstack Dev", "2015"],
+    name: 'Multi Post Stories',
+    technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    languages: ["html", "Ruby on rails", "css", "javascript"],
-    desktopImages: "./images/Snapshoot_five.png",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desktopImages: './images/Snapshoot_five.png',
   },
   {
-    name: "Multi Post Stories",
-    technologies: ["Facebook", "Fullstack Dev", "2015"],
+    name: 'Multi Post Stories',
+    technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    languages: ["html", "Ruby on rails", "css", "javascript"],
-    desktopImages: "./images/Snapshoot_five.png",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desktopImages: './images/Snapshoot_five.png',
   },
   {
-    name: "Multi Post Stories",
-    technologies: ["Facebook", "Fullstack Dev", "2015"],
+    name: 'Multi Post Stories',
+    technologies: ['Facebook', 'Fullstack Dev', '2015'],
     information:
-      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-    languages: ["html", "Ruby on rails", "css", "javascript"],
-    desktopImages: "./images/Snapshoot_five.png",
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    desktopImages: './images/Snapshoot_five.png',
   },
 ];
 
@@ -154,7 +154,7 @@ desktopProjects.forEach((desktopProject, desktopIndex) => {
   projectContainer.innerHTML += eachDesktopProject;
 });
 
-const projectButtons = document.querySelectorAll(".work-btn");
+const projectButtons = document.querySelectorAll('.work-btn');
 
 const modalContent = (project) => {
   const popup = `
@@ -228,19 +228,19 @@ const modalContent = (project) => {
   
   `;
   modalContainer.innerHTML = popup;
-  mainModalContainer.style.display = "block";
-  wholeCont.style.display = "none";
+  mainModalContainer.style.display = 'block';
+  wholeCont.style.display = 'none';
 };
-const closeModalButton = document.querySelector(".close-modal");
+const closeModalButton = document.querySelector('.close-modal');
 // close window button
-closeModalButton.addEventListener("click", () => {
-  mainModalContainer.style.display = "none";
-  wholeCont.style.display = "block";
+closeModalButton.addEventListener('click', () => {
+  mainModalContainer.style.display = 'none';
+  wholeCont.style.display = 'block';
 });
 
 projectButtons.forEach((projectBtn) => {
-  projectBtn.addEventListener("click", (e) => {
-    const getBtnId = e.target.getAttribute("id");
+  projectBtn.addEventListener('click', (e) => {
+    const getBtnId = e.target.getAttribute('id');
     const projectObj = projects[getBtnId];
     modalContent(projectObj);
   });
