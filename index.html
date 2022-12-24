@@ -20,58 +20,69 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <header class="main-nav">
-      <a href="index.html" class="logo">Towett</a>
-      <nav class="desktop-menu">
-        <ul class="desktop-nav">
-          <li class="desktop-li"><a href="#portfolio-link">Portfolio</a></li>
-          <li class="desktop-li"><a href="#about-link">About</a></li>
-          <li class="desktop-li"><a href="#contact-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="nav-icons">
-        <ion-icon name="menu-outline" class="icons hambuger-icon"></ion-icon>
-        <ion-icon name="close-outline" class="icons closing-icon"></ion-icon>
-      </div>
-    </header>
-    <section class="first-content">
-      <h1 class="greeting">I’m Sammy Glad to see you!</h1>
-      <p class="info">
-        I’m a software developer! I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <p class="connect">let's connect</p>
-      <ul class="social-connect">
-        <li>
-          <a href="https://twitter.com/sammy15375658"
-            ><img src="images/Vector.png" alt="twiter-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/towett-sammy-43476024a/"
-            ><img src="images/linkedin.png" width="18px" alt="linkedin-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
-            ><img src="images/Vector (1).png" alt="email-icon"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/Sammy3000"
-            ><img src="images/Vector (2).png" alt="github"
-          /></a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Vector (3).png" alt="angel-icon" /></a>
-        </li>
-      </ul>
+    <section class="main-modal-window">
+      <button type="button" class="close-modal">X</button>
+      <!-- modalwindow -->
+      <div class="overlay"></div>
+      <!-- modal -->
     </section>
-    <!--Portfolio section-->
-    <section class="work" id="portfolio-link">
-      <div class="describe tonic-one">
+
+    <div class="blur-bg">
+      <header class="main-nav">
+        <a href="index.html" class="logo">Towett</a>
+        <nav class="desktop-menu">
+          <ul class="desktop-nav">
+            <li class="desktop-li">
+              <a href="#portfolio-link">Portfolio</a>
+            </li>
+            <li class="desktop-li"><a href="#about-link">About</a></li>
+            <li class="desktop-li"><a href="#contact-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-icons">
+          <ion-icon name="menu-outline" class="icons hambuger-icon"></ion-icon>
+          <ion-icon name="close-outline" class="icons closing-icon"></ion-icon>
+        </div>
+      </header>
+      <section class="first-content">
+        <h1 class="greeting">I’m Sammy Glad to see you!</h1>
+        <p class="info">
+          I’m a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <p class="connect">let's connect</p>
+        <ul class="social-connect">
+          <li>
+            <a href="https://twitter.com/sammy15375658"
+              ><img src="images/Vector.png" alt="twiter-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/towett-sammy-43476024a/"
+              ><img src="images/linkedin.png" width="18px" alt="linkedin-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+              ><img src="images/Vector (1).png" alt="email-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/Sammy3000"
+              ><img src="images/Vector (2).png" alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/Vector (3).png" alt="angel-icon" /></a>
+          </li>
+        </ul>
+      </section>
+      <!--Portfolio section-->
+      <section class="work" id="portfolio-link">
+        <!-- <div class="describe tonic-one">
         <img
           src="images/Snapshoot Portfolio.png"
           alt="first-tonic-image"
@@ -170,8 +181,9 @@
           </ul>
           <button class="work-btn">See Project</button>
         </article>
-      </div>
-      <div class="describe desktop-tonic">
+      </div> -->
+
+        <!-- <div class="describe desktop-tonic">
         <img
           src="images/Snapshoot Portfolio (4).png"
           alt="tonic1"
@@ -274,190 +286,197 @@
           alt="tonic1"
           class="work-img"
         />
-      </div>
-    </section>
-    <!--Portfolio section end-->
+      </div> -->
+      </section>
+      <!--Portfolio section end-->
 
-    <!--about section-->
+      <!--about section-->
 
-    <section class="section-about" id="about-link">
-      <div class="container-one">
-        <h2 class="heading-tertiary">About<br />myself</h2>
-        <p class="about-info">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <h2 class="heading-secondary">Let's Connect</h2>
-        <ul class="social-icons">
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="images/Vector.png"
-                alt="Twitter icon"
-            /></a>
-          </li>
+      <section class="section-about" id="about-link">
+        <div class="container-one">
+          <h2 class="heading-tertiary">About<br />myself</h2>
+          <p class="about-info">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <h2 class="heading-secondary">Let's Connect</h2>
+          <ul class="social-icons">
+            <li>
+              <a href="#"
+                ><img
+                  class="social-icon"
+                  src="images/Vector.png"
+                  alt="Twitter icon"
+              /></a>
+            </li>
 
-          <li>
-            <a href="#">
+            <li>
+              <a href="#">
+                <img
+                  class="social-icon"
+                  src="images/linkedin.png"
+                  alt="Linkedin icon"
+                  width="35px"
+              /></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><img
+                  class="social-icon"
+                  src="images/Vector (1).png"
+                  alt="Gmail icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="social-icon"
+                  src="images/Vector (2).png"
+                  alt="Github icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="social-icon"
+                  src="images/Vector (3).png"
+                  alt="angel icon"
+              /></a>
+            </li>
+          </ul>
+          <a class="btn" href="#">Get my resume</a>
+        </div>
+        <div class="container-two">
+          <ul class="main-language-ul">
+            <li class="main-language-li">
+              <h3>Languages</h3>
               <img
-                class="social-icon"
-                src="images/linkedin.png"
-                alt="Linkedin icon"
-                width="35px"
-            /></a>
-          </li>
-
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="images/Vector (1).png"
-                alt="Gmail icon"
+                src="images/down-arrow.png"
+                alt="down arrow"
+                class="arrows"
               />
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="social-icon"
-                src="images/Vector (2).png"
-                alt="Github icon"
-            /></a>
-          </li>
-          <li>
-            <a href="#">
+              <ul class="main-language-subul">
+                <li class="main-language-subli">
+                  <img
+                    class="desk-image"
+                    src="images/Ellipse 1.png"
+                    alt="javascript picture"
+                  />
+                  <p class="desk-lang">JavaScript</p>
+                  <img
+                    src="images/Frame 9.png"
+                    alt="javascript picture"
+                    class="desktop-img"
+                  />
+                </li>
+                <li class="main-language-subli">
+                  <img
+                    class="desk-image"
+                    src="images/Ellipse 1 (1).png"
+                    alt="html picture"
+                  />
+                  <p class="desk-lang">HTML</p>
+                  <img
+                    src="images/Frame 10.png"
+                    alt="javascript picture"
+                    class="desktop-img"
+                  />
+                </li>
+                <li class="main-language-subli">
+                  <img
+                    class="desk-image"
+                    src="images/Ellipse 1 (2).png"
+                    alt="css picture"
+                  />
+                  <p class="desk-lang">CSS</p>
+                  <img
+                    src="images/Frame 11.png"
+                    alt="javascript picture"
+                    class="desktop-img"
+                  />
+                </li>
+              </ul>
+            </li>
+
+            <li class="frameworks">
+              <h3>Frameworks</h3>
               <img
-                class="social-icon"
-                src="images/Vector (3).png"
-                alt="angel icon"
-            /></a>
-          </li>
-        </ul>
-        <a class="btn" href="#">Get my resume</a>
-      </div>
-      <div class="container-two">
-        <ul class="main-language-ul">
-          <li class="main-language-li">
-            <h3>Languages</h3>
-            <img src="images/down-arrow.png" alt="down arrow" class="arrows" />
-            <ul class="main-language-subul">
-              <li class="main-language-subli">
-                <img
-                  class="desk-image"
-                  src="images/Ellipse 1.png"
-                  alt="javascript picture"
-                />
-                <p class="desk-lang">JavaScript</p>
-                <img
-                  src="images/Frame 9.png"
-                  alt="javascript picture"
-                  class="desktop-img"
-                />
-              </li>
-              <li class="main-language-subli">
-                <img
-                  class="desk-image"
-                  src="images/Ellipse 1 (1).png"
-                  alt="html picture"
-                />
-                <p class="desk-lang">HTML</p>
-                <img
-                  src="images/Frame 10.png"
-                  alt="javascript picture"
-                  class="desktop-img"
-                />
-              </li>
-              <li class="main-language-subli">
-                <img
-                  class="desk-image"
-                  src="images/Ellipse 1 (2).png"
-                  alt="css picture"
-                />
-                <p class="desk-lang">CSS</p>
-                <img
-                  src="images/Frame 11.png"
-                  alt="javascript picture"
-                  class="desktop-img"
-                />
-              </li>
-            </ul>
-          </li>
+                src="images/right-arrow-angle.png"
+                alt="right arrow"
+                class="arrows"
+              />
+            </li>
 
-          <li class="frameworks">
-            <h3>Frameworks</h3>
-            <img
-              src="images/right-arrow-angle.png"
-              alt="right arrow"
-              class="arrows"
-            />
-          </li>
+            <li class="skills">
+              <h3>Skills</h3>
+              <img
+                src="images/right-arrow-angle.png"
+                alt="right arrow"
+                class="arrows"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact" id="contact-link">
+        <h2 class="heading">Contact me</h2>
+        <p class="contact-info">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          action="https://formspree.io/f/xeqdyzlb"
+          method="post"
+          id="myform"
+          name="myForm"
+        >
+          <ul class="form-ul">
+            <li class="form-li">
+              <input
+                id="full-name"
+                name="name"
+                class="input"
+                type="text"
+                placeholder="enter your name please..."
+                maxlength="30"
+                required
+              />
+            </li>
+            <li class="form-li">
+              <input
+                name="Email"
+                id="email"
+                class="input"
+                type="email"
+                placeholder="my email@gmail.com"
+                required
+              />
+            </li>
+            <li class="form-li">
+              <textarea
+                name="user-message"
+                class="contact-message"
+                placeholder="write your message here..."
+                maxlength="500"
+                required
+                id="message"
+              ></textarea>
+            </li>
+            <button type="submit" class="contact-btn">Get in touch</button>
+          </ul>
+          <label id="error_message"></label>
+        </form>
+      </section>
+    </div>
 
-          <li class="skills">
-            <h3>Skills</h3>
-            <img
-              src="images/right-arrow-angle.png"
-              alt="right arrow"
-              class="arrows"
-            />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="contact" id="contact-link">
-      <h2 class="heading">Contact me</h2>
-      <p class="contact-info">
-        If you have an application you are interested in developing, a feature
-        that you need built or a project that needs coding. I’d love to help
-        with it
-      </p>
-      <form
-        action="https://formspree.io/f/xeqdyzlb"
-        method="post"
-        id="myform"
-        name="myForm"
-      >
-        <ul class="form-ul">
-          <li class="form-li">
-            <input
-              id="full-name"
-              name="name"
-              class="input"
-              type="text"
-              placeholder="enter your name please..."
-              maxlength="30"
-              required
-            />
-          </li>
-          <li class="form-li">
-            <input
-              name="Email"
-              id="email"
-              class="input"
-              type="email"
-              placeholder="my email@gmail.com"
-              required
-            />
-          </li>
-          <li class="form-li">
-            <textarea
-              name="user-message"
-              class="contact-message"
-              placeholder="write your message here..."
-              maxlength="500"
-              required
-              id="message"
-            ></textarea>
-          </li>
-          <button type="submit" class="contact-btn">Get in touch</button>
-        </ul>
-        <label id="error_message"></label>
-      </form>
-    </section>
     <script defer src="Menuicon.js"></script>
     <script defer src="validation.js"></script>
     <script defer src="datastorage.js"></script>
+    <script defer src="./Newindow.js"></script>
   </body>
 </html>
