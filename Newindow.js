@@ -11,6 +11,7 @@ const projects = [
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required.",
     technologies: ["HTML", "CSS", "javascript"],
+    modalName: "Tonic",
     demo: "https://sammy3000.github.io/",
     source: "https://github.com/Sammy3000/Sammy3000.github.io",
   },
@@ -20,6 +21,7 @@ const projects = [
     information: ["Canopy", "Back End Dev", "2015"],
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    modalName: "Toni",
     technologies: ["HTML", "CSS", "javascript"],
     demo: "https://sammy3000.github.io/",
     source: "https://github.com/Sammy3000/Sammy3000.github.io",
@@ -31,6 +33,7 @@ const projects = [
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required.",
     technologies: ["HTML", "CSS", "javascript"],
+    modalName: "Toni",
     demo: "https://sammy3000.github.io/",
     source: "https://github.com/Sammy3000/Sammy3000.github.io",
   },
@@ -41,6 +44,7 @@ const projects = [
     description:
       " A daily selection of privately personalized reads; no accounts or sign-ups required.",
     technologies: ["HTML", "CSS", "javascript"],
+    modalName: "Toni",
     demo: "https://sammy3000.github.io/",
     source: "https://github.com/Sammy3000/Sammy3000.github.io",
   },
@@ -160,7 +164,7 @@ const modalContent = (project) => {
   const popup = `
   <div class="modal-content">
   <div class="modal-header">
-    <h1 class="modal-name">Tonic</h1>
+    <h1 class="modal-name">${project.modalName}</h1>
   </div>
   <div class="modal-information">
     <h2 class="modal-info">Canopy</h2>
