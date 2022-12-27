@@ -80,7 +80,6 @@
 }
 
 .modal-btn {
-  padding: 0.5rem 1rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -93,11 +92,12 @@
   margin: 0 0.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 2rem;
+  width: 7rem;
 }
 
 .modal-btn:hover {
-  font-size: larger;
   background-color: #6070ff;
   color: white;
 }
