@@ -85,15 +85,25 @@ Install this project with:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="authors"></a>
 
-> This is a solo project.
+> This is a Collaborative project.
 
 👤 **Towett Sammy**
 
 - GitHub: [@sam](https://github.com/Sammy3000)
 - Twitter: [@towettsam](https://twitter.com/sammy15375658)
 - LinkedIn: [@towettSammy](https://www.linkedin.com/in/towett-sammy-43476024a/)
+
+👤 **Owusu Dennis**
+
+👤 **Gerald Fitz**
+
+👤 **Prince Badru**
+
+
+
+
 
 <!-- CONTRIBUTING -->
 
